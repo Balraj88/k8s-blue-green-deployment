@@ -6,7 +6,7 @@ import (
 )
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "blue version number 1")
+	fmt.Fprintf(w, "this is the new green version")
 
 }
 
