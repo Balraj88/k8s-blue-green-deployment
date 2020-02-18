@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"os"
 )
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
@@ -13,5 +14,6 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	fmt.Println("Trivial web server is starting on port 8080...")
 	http.HandleFunc("/", indexHandler)
-	http.ListenAndServe(":8081", nil)
+	http.ListenAndServe(":8080", nil)
+	os.Exit(1)
 }
