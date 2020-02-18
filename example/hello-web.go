@@ -10,8 +10,8 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func mai() {
+func main() {
 	fmt.Println("Trivial web server is starting on port 8080...")
 	http.HandleFunc("/", indexHandler)
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":8081", nil)
 }
