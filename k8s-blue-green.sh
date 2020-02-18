@@ -12,7 +12,7 @@ healthcheck(){
     s=($(echo "$output" | awk '{s+=$4}END{print s}'))
     c=($(echo "$output" | wc -l))
 
-    if [ "$s" -gt "2" ]; then
+    if [ "$s" -gt "1" ]; then
         h=false
     fi
     ##if [ "$c" -lt "1" ]; then
