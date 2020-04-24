@@ -11,6 +11,6 @@ spec:
     targetPort: 8080
   selector:
     app: my-demo-app
-    version: 'e1b7756'
+    version: 'cd233d1'
   sessionAffinity: None
   type: LoadBalancer
