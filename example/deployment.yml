@@ -5,6 +5,9 @@ metadata:
   namespace: colors
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: my-demo-app
   template:
     metadata:
       labels:
