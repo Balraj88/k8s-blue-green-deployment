@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: my-demo-app
-  namespace: tips-webinar
+  namespace: colors
 spec:
   replicas: 1
   template:
@@ -10,15 +10,15 @@ spec:
       labels:
         name: my-demo-app
         app: my-demo-app
-        version: 'cd233d1'
+        version: 'a0159b8'
     spec:
       containers:
       - name: my-demo-app
-        image: gcr.io/codefresh-sa/trivial-web:cd233d1
+        image:  336151728602.dkr.ecr.us-east-2.amazonaws.com/trivial-web:a0159b8
         imagePullPolicy: Always
         ports:
         - name: http
           containerPort: 8080
           protocol: TCP
       imagePullSecrets:
-        - name: codefresh-generated-gcr.io-gcr-colors
+        - name: codefresh-generated-336151728602.dkr.ecr.us-east-2.amazonaws.com-ecr-colors
