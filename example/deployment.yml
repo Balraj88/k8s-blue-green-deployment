@@ -1,14 +1,14 @@
-apiVersion: apps/v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: my-demo-app
   namespace: colors
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      app: my-demo-app
-      version: 'a0159b8'
+#  selector:
+#    matchLabels:
+#      app: my-demo-app
+#      version: 'a0159b8'
   template:
     metadata:
       labels:
