@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: my-demo-app
+  name: my-demo-app-a0159b8
   namespace: colors
 spec:
   replicas: 1
